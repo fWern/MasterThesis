@@ -1,0 +1,20 @@
+python -m muldic_bench \
+    --label Kubernetes \
+    --dataset_dir /home/felix.wernlein/project/datasets/muldic/ \
+    --modality all \
+    --hidden_size 256 \
+    --learning_rate 3e-4 \
+    --batch_size 64 \
+    --num_epochs 500 \
+    --patience 1 \
+    --iterations 5 \
+    --contrastive_learning \
+    --learning_rate_contrastive 1.5e-5 \
+    --batch_size_contrastive 64 \
+    --num_epochs_contrastive 500 \
+    --patience_contrastive 10 \
+    --top_k 3 \
+    --robust_training all \
+    --missing_training \
+    --missing_rate 0.9 \
+    --missing_modality text \
